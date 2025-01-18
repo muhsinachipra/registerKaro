@@ -24,6 +24,11 @@ function TaskForm({ onSave, onCancel, initialTask }) {
       return;
     }
     onSave(task);
+    setTask({
+      title: "",
+      description: "",
+      priority: "Medium",
+    });
   };
 
   return (

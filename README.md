@@ -62,7 +62,11 @@ task-management-app
    ```
    npm install
    ```
-4. Start the application:
+4. Install react-scripts:
+   ```
+   npm install react-scripts
+   ```
+5. Start the application:
    ```
    npm start
    ```
