@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function TaskCard({ task, onToggleComplete, onDelete, onEdit }) {
   return (
@@ -10,7 +11,9 @@ function TaskCard({ task, onToggleComplete, onDelete, onEdit }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h3>{task.title}</h3>
+      <h3>
+        <Link to={`/task/${task.id}`}>{task.title}</Link>
+      </h3>
       <p>{task.description}</p>
       <p>Priority: {task.priority}</p>
       <p className={task.completed ? "completed" : "incomplete"}>

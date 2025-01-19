@@ -1,3 +1,5 @@
+// src\utils\localStorage.js
+
 // Save tasks to local storage
 export const saveTasks = (tasks) => {
   localStorage.setItem("tasks", JSON.stringify(tasks));
